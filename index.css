@@ -1,0 +1,61 @@
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  padding: 40px;
+  background: #f0f0f0;
+}
+
+.hero-left { flex: 1; }
+.hero-right { flex: 1; }
+
+button {
+  padding: 10px 20px;
+  background: #0077ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.product-display, .cart, .payment {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero, .product-display, .cart, .payment {
+    flex-direction: column;
+  }
+}
